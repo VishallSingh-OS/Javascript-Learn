@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and form handling</title>
+
+</head>
+<body>
+    <h1>Event and form handling</h1>
+    <button id="click-me"> Click me </button>
+    <!-- Build a counter with + and - buttons that update a <span> value.
+
+Create a dynamic list: an input + "Add" button adds <li>s to <ul>. Use event delegation on the <ul> to detect clicks on list items and remove them.
+
+Make a form that validates email and password (password min 6). Show custom error messages (use setCustomValidity).
+
+Create a search input that fetches (fake) suggestions — use debounce 400ms to avoid many requests. (You can console.log instead of real fetch).
+
+Implement an image upload preview + remove button that clears preview and file input. -->
+<div>
+    <button id="minus">-</button>
+    <span id="count">0</span>
+    <button id="plus">+</button>
+</div>
+<br>
+<input type="text" id="inputText">
+<button id="add">Add</button>
+<ul id="list">
+</ul>
+
+<form action="" id="form" method="get">
+    <input type="email" name="email" id="email">
+    <input type="password" name="password" id="password" minlength="6" required>
+    <button>Send</button>
+</form>
+
+<input type="search" name="search" id="search">
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
